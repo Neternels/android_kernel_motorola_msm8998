@@ -2,7 +2,11 @@
 
 # fix for build system bug...
 obj-$(CONFIG_STAGING)		+= staging.o
-
+obj-y           += rtl8188eus/
+obj-y           += rtl8812au/
+obj-y           += rtl8188fu/
+obj-y           += rtl8192eu/
+obj-y			+= rtl8814au/
 obj-y				+= media/
 obj-$(CONFIG_SLICOSS)		+= slicoss/
 obj-$(CONFIG_PRISM2_USB)	+= wlan-ng/
